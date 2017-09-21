@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <title>Vue.js Example</title>
   <style>
-    .btn-loading { background-color: orange; }
+    
   </style>
 </head>
 <body>
   <div id="root">
-    <button :disabled="isDisabled" @click="disableButton">Click me!</button>
+    
   </div>
 
   <script src="../node_modules/vue/dist/vue.js"></script>
@@ -18,16 +18,17 @@
     var app = new Vue({
       el: '#root',
       data: {
-        title: 'This title was set through JS',
-        isDisabled: false
+        
+      },
+      computed: {
+                
       },
 
       methods: {
-        disableButton() {
-          this.isDisabled = true;
-        }
+        
       }
-    })
+    });
+    
   </script>
 </body>
 </html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vue.js Example</title>
+  <style>
+    
+  </style>
+</head>
+<body>
+  <div id="root">
+    <ol>
+      <task v-for="(item, index) in tasks" :key="index">{{ item.description }}</task>
+    </ol>
+
+    <shop-item></shop-item>
+  </div>
+
+  <script src="../node_modules/vue/dist/vue.js"></script>
+  <script src="js/main7.js"></script>
+
+</body>
+</html>
