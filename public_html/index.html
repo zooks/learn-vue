@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vue.js Example</title>
+</head>
+<body>
+  <div id="root">
+    <input type="text" id="input" v-model="message">
+    <p>the value of input is {{ message }}</p>
+  </div>
+
+  <script src="https://unpkg.com/vue"></script>
+  <script>
+    
+    // document.querySelector('#input').value = data.message;
+    new Vue({
+      el: '#root',
+      data: {
+        message: 'hello world'
+      }
+    })
+  </script>
+</body>
+</html>

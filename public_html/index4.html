@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vue.js Example</title>
+  <style>
+    
+  </style>
+</head>
+<body>
+  <div id="root">
+    <h1>
+      {{ reversedMessage }}
+    </h1>
+  </div>
+
+  <script src="../node_modules/vue/dist/vue.js"></script>
+  <script>
+    
+    // document.querySelector('#input').value = data.message;
+    var app = new Vue({
+      el: '#root',
+      data: {
+        message: 'Hello World'
+      },
+      computed: {
+        reversedMessage() {
+          return this.message.split('').reverse().join('');
+        }
+      },
+
+      methods: {
+        
+      }
+    });
+  </script>
+</body>
+</html>
